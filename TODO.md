@@ -6,13 +6,13 @@
 
 ## 1. 必做（沒做會扣分）
 
-- [ ] **填學號（Q1）**
+- [x] **填學號（Q1）**（已完成：D1561001）
   打開 `site/assets/config.js`，把 `studentId: "TBD"` 改成你的學號。
   （可選）同檔 `program:` 填目前就讀系所（Q2），空字串會自動隱藏。
 
 - [ ] **決定 GitHub repo 要公開哪些檔案** → 見下方 §3，選 A 或 B
 
-- [ ] **建立 GitHub repo 並推上去**（Q3）
+- [x] **建立 GitHub repo 並推上去**（Q3）（已完成：https://github.com/iamkylee/hw1-portfolio ；網站 https://iamkylee.github.io/hw1-portfolio/ ）
   1. GitHub → New repository，名稱例如 `hw1-portfolio`，**Public**，**不要**勾 README
   2. 在 Mac 終端機：
      ```bash
@@ -41,8 +41,11 @@
 - [ ] **Q4 年資**：採中文履歷「2001–2004 分公司、2004 起研究院」兩段，而非英文履歷的「2001–至今」
 - [ ] **Q6 Email**：履歷上的 `iamkylee@email.com` 疑為筆誤，網站用 `iamkylee@gmail.com`
 - [ ] **Q8 架構圖**：三個 Agent 名稱（Inventory / Provisioning / Verification）為示意，已標 "illustrative"；要改成論文實際名稱嗎？
-- [ ] **Q9 照片**：`info/` 裡有一張大頭照（目前**未使用**，網站用 SVG 字標頭像）。要放上網站嗎？
-- [ ] **Q5 社群連結**：要放 GitHub / LinkedIn 嗎？填在 `config.js` 即可
+- [x] **Q9 照片**：已放上網站（縮圖、去 EXIF）
+- [x] **Q5 社群連結**：已放 GitHub / LinkedIn / 部落格
+
+- [ ] **Q10 現職**：你目前仍在中華電信研究院任職嗎？（網站寫「2004 – 至今」）
+- [ ] **Q11 研究方向摘要**：確認公開範圍是否合適（指導教授姓名目前未放）
 
 ## 3. Repo 公開範圍（回答「git remote 會不會把全部放上去？」）
 

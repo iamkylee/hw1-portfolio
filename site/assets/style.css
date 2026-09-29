@@ -1,8 +1,8 @@
 /* ========== Design tokens ========== */
 :root {
-  --bg: #f8fafc; --bg-alt: #eef4f3; --surface: #ffffff;
-  --text: #0f172a; --muted: #475569; --line: #dbe3ea;
-  --accent: #0f766e; --accent-2: #b45309; --accent-soft: #ccfbf1;
+  --bg: #f5f8ff; --bg-alt: #e8f0fd; --surface: #ffffff;
+  --text: #0f172a; --muted: #475569; --line: #d3deef;
+  --accent: #1d4ed8; --accent-2: #0369a1; --accent-soft: #dbeafe;
   --shadow: 0 1px 2px rgba(15,23,42,.06), 0 8px 24px rgba(15,23,42,.06);
   --radius: 14px; --maxw: 1080px;
   --font: "Inter", "Noto Sans TC", system-ui, -apple-system, "PingFang TC", "Microsoft JhengHei", sans-serif;
@@ -10,17 +10,17 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0b1220; --bg-alt: #0f1a2b; --surface: #132033;
-    --text: #e6edf5; --muted: #9fb0c3; --line: #22324a;
-    --accent: #2dd4bf; --accent-2: #fbbf24; --accent-soft: #123a3a;
+    --bg: #0a1120; --bg-alt: #0e1a30; --surface: #12213a;
+    --text: #e6edf8; --muted: #9db1cf; --line: #22355a;
+    --accent: #60a5fa; --accent-2: #93c5fd; --accent-soft: #16294a;
     --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0b1220; --bg-alt: #0f1a2b; --surface: #132033;
-  --text: #e6edf5; --muted: #9fb0c3; --line: #22324a;
-  --accent: #2dd4bf; --accent-2: #fbbf24; --accent-soft: #123a3a;
+  --bg: #0a1120; --bg-alt: #0e1a30; --surface: #12213a;
+  --text: #e6edf8; --muted: #9db1cf; --line: #22355a;
+  --accent: #60a5fa; --accent-2: #93c5fd; --accent-soft: #16294a;
   --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
   color-scheme: dark;
 }
@@ -75,7 +75,7 @@ h1 .name-zh { display: block; font-size: .55em; color: var(--muted); font-weight
 .btn.primary { background: var(--accent); color: var(--bg); }
 .btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
 .avatar { margin: 0; justify-self: center; width: min(320px, 80vw); }
-.avatar img { width: 100%; border-radius: 50%; box-shadow: var(--shadow); }
+.avatar img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 28px; box-shadow: var(--shadow); border: 4px solid var(--surface); outline: 2px solid var(--accent); }
 .interests { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
 .tag { font-size: .82rem; padding: 4px 12px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--muted); }
 
@@ -141,7 +141,7 @@ h1 .name-zh { display: block; font-size: .55em; color: var(--muted); font-weight
   .toggles { margin: 8px 0 0; }
   .hero { padding-top: 36px; }
   .hero-grid, .two-col, .cards { grid-template-columns: 1fr; }
-  .avatar { order: -1; width: 180px; }
+  .avatar { order: -1; width: 190px; }
   .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .stats li { min-width: 0; padding: 10px; }
   .stats b { font-size: 1.5rem; }
@@ -151,3 +151,16 @@ h1 .name-zh { display: block; font-size: .55em; color: var(--muted); font-weight
   .section { padding: 52px 0; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+/* ========== PhD research direction ========== */
+.direction { background: linear-gradient(135deg, var(--surface), var(--accent-soft)); border: 1px solid var(--line); border-left: 6px solid var(--accent); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); margin-bottom: 32px; }
+.direction h3 { font-size: clamp(1.3rem, 3vw, 1.75rem); margin-bottom: .1rem; }
+.direction .sub { color: var(--muted); margin: 0 0 1rem; }
+.dir-lead { max-width: 75ch; }
+.pillars { list-style: none; padding: 0; margin: 1.4rem 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.pillars li { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.pillars .num { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--bg); font-weight: 800; font-size: .85rem; margin-bottom: 8px; }
+.pillars h4 { font-size: 1rem; margin: 0 0 .3rem; }
+.pillars p { margin: 0; font-size: .9rem; color: var(--muted); }
+@media (max-width: 1000px) { .pillars { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px)  { .pillars { grid-template-columns: 1fr; } .direction { padding: 20px; } }
