@@ -74,8 +74,8 @@ h1 .name-zh { display: block; font-size: .55em; color: var(--muted); font-weight
 .btn { display: inline-block; padding: 10px 20px; border-radius: 999px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 600; }
 .btn.primary { background: var(--accent); color: var(--bg); }
 .btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
-.avatar { margin: 0; justify-self: center; width: min(320px, 80vw); }
-.avatar img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 28px; box-shadow: var(--shadow); border: 4px solid var(--surface); outline: 2px solid var(--accent); }
+.avatar { margin: 0; justify-self: center; width: min(300px, 80vw); }
+.avatar img { width: 100%; aspect-ratio: 298 / 452; object-fit: cover; border-radius: 28px; box-shadow: var(--shadow); border: 4px solid var(--surface); outline: 2px solid var(--accent); }
 .interests { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
 .tag { font-size: .82rem; padding: 4px 12px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--muted); }
 
@@ -141,7 +141,7 @@ h1 .name-zh { display: block; font-size: .55em; color: var(--muted); font-weight
   .toggles { margin: 8px 0 0; }
   .hero { padding-top: 36px; }
   .hero-grid, .two-col, .cards { grid-template-columns: 1fr; }
-  .avatar { order: -1; width: 190px; }
+  .avatar { order: -1; width: 210px; }
   .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .stats li { min-width: 0; padding: 10px; }
   .stats b { font-size: 1.5rem; }

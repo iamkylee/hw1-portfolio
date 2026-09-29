@@ -8,7 +8,7 @@
 | 課程 | 2026 Generative AI (CGU) — Homework #1 |
 | 截止 | **2026-10-06 23:59**（每遲交 4 小時扣 5%） |
 | 繳交檔名 | **`hw1_<學號>.zip`**（格式錯誤 ×0.9） |
-| 文件版本 | v0.2.1（2026-09-29） |
+| 文件版本 | v0.2.2（2026-09-29） |
 
 ---
 
@@ -41,7 +41,7 @@ HW1/
 │       ├── config.js      ★ 學號、系所、Email、GitHub、LinkedIn 都在這裡改
 │       ├── style.css      設計 token、深色模式、RWD
 │       ├── main.js        語言切換、主題切換、手機選單、捲動標示
-│       └── img/           photo.jpg（本人照片，已縮圖並移除 EXIF）、multi-agent.svg、favicon.svg
+│       └── img/           photo.jpg（本人照片，直式 298×452，已移除 EXIF）、multi-agent.svg、favicon.svg
 ├── .github/workflows/pages.yml
 ├── deliverables/          AI Interaction Log、Reflection（繳交用，不上網站）
 ├── scripts/               check_links.py、make_submission.sh
@@ -70,7 +70,7 @@ HW1/
 | 論文 3 篇、專利 3 件 | 兩份履歷 | IEEE Xplore 連結由網路搜尋確認（APNOMS: 11181316、ICCAI: 11105938） |
 | SLM on Raspberry Pi、醫療 AI 願景 | 自傳 | 未寫出被拒會議名稱，只寫「首次投稿未獲接受」 |
 | 博士研究方向（v0.2.0） | `info/v092401_博士研究計畫…pptx` | 只摘錄「研究方向」層級：組織成長／角色演化／好奇心驅動學習／安全驗證＋醫療願景；**不放**細節（指標、實驗設計、備援投影片 Q&A）、指導教授姓名、獎學金申請語境 |
-| 大頭照（v0.2.0） | `info/大頭貼20260306.jpg` | 本人明確要求放上網站；只複製**縮圖、去 EXIF** 的 `site/assets/img/photo.jpg`，原檔仍留在 info/（不進 git） |
+| 大頭照（v0.2.0） | `info/大頭貼20260306.jpg` | 本人明確要求放上網站；只複製**去 EXIF**（原尺寸 298×452，直式）的 `site/assets/img/photo.jpg`，原檔仍留在 info/（不進 git） |
 | 刻意 **不** 放 | — | 電話、地址、原始 PDF、申請文件語境 |
 | `info/myblog.md` | — | 內容為部落格網址，已放入 Contact（v0.2.0） |
 
@@ -87,7 +87,7 @@ HW1/
 | Q7 | Reflection 是 AI 依本次過程寫的初稿；作業評分重視 human judgment，請用自己的話改寫/補充後再轉 PDF。 | 草稿 PDF 已產出，可先暫用 | | ❓ |
 | Q8 | 架構圖中的三個 Specialist Agent（Inventory / Provisioning / Verification）是示意命名，是否改成論文中的實際 agent 名稱？ | 圖說標示 "illustrative" | | ❓ |
 | Q9 | 是否放個人照片取代 SVG 字標頭像？ | 不放照片（隱私） | 使用者已放入大頭照並要求上網站 | ✅ v0.2.0 |
-| Q10 | 你目前**仍在中華電信研究院任職**嗎？（網站經歷寫「2004 – 至今 首席架構師」，同時就讀博士班；若已留職停薪／離職，請告訴我改寫） | 維持「至今」 | 已離開中華電信研究院，全職讀書研究（2026-09-29） | ✅ v0.2.1 |
+| Q10 | 你目前**仍在中華電信研究院任職**嗎？（網站經歷寫「2004 – 至今 首席架構師」，同時就讀博士班；若已留職停薪／離職，請告訴我改寫） | 維持「至今」 | 已離開中華電信研究院，全職讀書研究；任職 2004 – 2026/08（2026-09-29） | ✅ v0.2.2 |
 | Q11 | 博士研究方向摘要是否可公開？（已刻意只寫方向層級，未含細節、指導教授、獎學金字樣；若要加入指導教授或再精簡請告知） | 如現況 | | ❓ |
 
 > 回答後告訴我（或直接改表格），我會同步更新網站、HISTORY.md 並 commit。
