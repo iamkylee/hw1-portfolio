@@ -15,6 +15,11 @@ python3 -m http.server 8000 -d site   # open http://localhost:8000
 python3 scripts/check_links.py        # anchors, local assets, external links
 ```
 
+## Cache busting
+
+Assets are referenced as `assets/xxx?v=<version>` in `site/index.html`. When you change anything under
+`site/assets/`, bump that `?v=` value (e.g. `0.2.3` → `0.2.4`) so browsers do not show a stale cached copy.
+
 ## Edit personal info
 
 Everything that may change (student ID, program, e-mail, GitHub, LinkedIn) lives in

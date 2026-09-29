@@ -7,6 +7,7 @@
 
 | 版本 | 日期 | 摘要 | Commit |
 |---|---|---|---|
+| v0.2.3 | 2026-09-29 | 修正瀏覽器快取舊 CSS/圖片：資源網址加 `?v=` 版本參數 | 見 `git log`（tag `v0.2.3`） |
 | v0.2.2 | 2026-09-29 | 照片改為直式（不裁切）；中華電信任職期間精確到 2026/08 | 見 `git log`（tag `v0.2.2`） |
 | v0.2.1 | 2026-09-29 | 現職更新：已離開中華電信研究院、全職就讀博士班 | 見 `git log`（tag `v0.2.1`） |
 | v0.2.0 | 2026-09-29 | 博士研究方向、學歷更新（長庚 AI 博士班）、本人照片、藍色主題、Contact 加 GitHub/LinkedIn/部落格 | 見 `git log`（tag `v0.2.0`） |
@@ -14,6 +15,22 @@
 | v0.1.0 | 2026-09-29 | 初版：網站、GitHub Pages 部署、SPEC/HISTORY、繳交文件草稿 | `0671cad`（tag `v0.1.0`） |
 
 ---
+
+## v0.2.3 — 2026-09-29（Asia/Taipei）
+
+### Q&A 紀錄
+
+| # | 提問者 | 內容 | 回應 / 處理 |
+|---|---|---|---|
+| 18 | 使用者 | Actions 重新 Run 出現 "Multiple artifacts named github-pages … Artifact count is 3" | 原因：對同一筆失敗紀錄反覆 Re-run，會在同一 run 累積同名 artifact。解法：改推新 commit / 手動 Run workflow 開新的執行，勿再 Re-run 舊紀錄；程式無誤 |
+| 19 | 使用者 | 本機看到長型照片，線上網站仍是正方形，但 2026/08 已更新 | 已用線上 CSS 驗證伺服器端 `aspect-ratio: 298 / 452` 是新的 → 使用者瀏覽器快取了舊的 `style.css`/`photo.jpg`（GitHub Pages 預設快取約 10 分鐘）。短期：強制重新整理；長期：資源網址加版本參數 |
+
+### 變更內容
+- `site/index.html`：所有 `assets/...` 的 `href`/`src` 加上 `?v=0.2.3`（CSS、JS、config、圖片、favicon）。
+- 之後修改任何 `site/assets/` 內檔案時，須同步遞增 `index.html` 中的 `?v=` 版本（README 已註明）。
+
+### Human judgment
+- 先驗證線上檔案內容，再判斷是快取問題而非部署失敗，避免無謂地改動程式。
 
 ## v0.2.2 — 2026-09-29（Asia/Taipei）
 

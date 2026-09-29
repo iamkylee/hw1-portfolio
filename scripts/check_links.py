@@ -33,7 +33,7 @@ for r in p.refs:
             code = getattr(e, "code", None)
             # IEEE Xplore 常對機器人回 418/403，但瀏覽器可正常開啟 → 視為警告
             (print(f"WARN {code} {r}") if code in (403, 418, 429) else bad.append((str(e)[:60], r)))
-    elif not (ROOT / r).exists():
+    elif not (ROOT / r.split("?")[0].split("#")[0]).exists():   # ?v= 版本參數不影響檔案存在檢查
         bad.append(("missing", r))
 
 print(f"checked {len(p.refs)} refs, {len(p.ids)} ids")
