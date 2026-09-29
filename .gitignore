@@ -1,0 +1,14 @@
+# ── 隱私：info/ 內為履歷、自傳等原始個資，僅供本機索引，絕不上傳 (RQ-2) ──
+info/
+/info/**
+
+# 繳交用打包檔（含學號）不進版控
+*.zip
+dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuan-Yin Lee 李冠穎 · Portfolio</title>
+  <meta name="description" content="Kuan-Yin Lee (李冠穎) — Chief Architect & AI Researcher. Generative AI, Multi-Agent systems and autonomous telecom networks.">
+  <meta name="theme-color" content="#0f766e">
+  <meta property="og:title" content="Kuan-Yin Lee 李冠穎 · Portfolio">
+  <meta property="og:description" content="Chief Architect & AI Researcher — Multi-Agent LLM systems for autonomous telecom operations.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    /* 在繪製前套用主題/語言，避免閃爍 */
+    (function () {
+      try {
+        var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t);
+        var l = localStorage.getItem('lang');  if (l) { document.documentElement.setAttribute('data-lang', l); document.documentElement.lang = l === 'zh' ? 'zh-Hant' : 'en'; }
+      } catch (e) {}
+    })();
+  </script>
+  <script src="assets/config.js"></script>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="Home">
+        <img src="assets/img/favicon.svg" alt="" width="28" height="28">
+        <span>K.Y. Lee</span>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="#about"><span lang="en">About</span><span lang="zh">關於我</span></a>
+        <a href="#experience"><span lang="en">Education &amp; Experience</span><span lang="zh">學經歷</span></a>
+        <a href="#research"><span lang="en">Research &amp; Projects</span><span lang="zh">研究與專案</span></a>
+        <a href="#contact"><span lang="en">Contact</span><span lang="zh">聯絡</span></a>
+        <div class="toggles">
+          <button id="langBtn" class="chip" aria-label="Switch language">中 / EN</button>
+          <button id="themeBtn" class="chip" aria-label="Toggle dark mode">◐</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ───────────── 1. ABOUT ───────────── -->
+    <section id="about" class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow"><span lang="en">Chief Architect · AI Researcher</span><span lang="zh">首席架構師 · AI 研究者</span></p>
+          <h1>
+            <span class="name-en">Kuan-Yin Lee</span>
+            <span class="name-zh">李冠穎</span>
+          </h1>
+          <p class="sid"><span lang="en">Student ID</span><span lang="zh">學號</span>: <strong data-config="studentId">—</strong>
+            <span class="program" data-config="program" hidden></span></p>
+          <p class="lead">
+            <span lang="en">I design large-scale telecom network-management systems and teach them to run themselves.
+            After 24 years moving from Java/OOP to DevOps, Cloud Native and now Generative AI, my work focuses on
+            <strong>Multi-Agent LLM architectures</strong> that let operators state an <em>intent</em> and let agents do the reconfiguration.</span>
+            <span lang="zh">我在中華電信研究院設計大型電信網管系統，並讓系統能「自己運作」。二十四年來從 Java/OOP、DevOps、雲原生一路走到生成式 AI，
+            目前專注於 <strong>Multi-Agent 大型語言模型架構</strong>：讓維運人員只需說出「意圖」，由代理人完成網路改接與設定。</span>
+          </p>
+          <ul class="stats" aria-label="Highlights">
+            <li><b>24</b><span lang="en">years telecom R&amp;D</span><span lang="zh">年電信研發</span></li>
+            <li><b>3</b><span lang="en">published patents</span><span lang="zh">件公開專利</span></li>
+            <li><b>2</b><span lang="en">EI / IEEE papers (2025)</span><span lang="zh">篇 EI / IEEE 論文</span></li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary" href="#research"><span lang="en">See my research</span><span lang="zh">看我的研究</span></a>
+            <a class="btn" href="#contact"><span lang="en">Get in touch</span><span lang="zh">聯絡我</span></a>
+          </div>
+        </div>
+        <figure class="avatar">
+          <img src="assets/img/avatar.svg" alt="Illustrated monogram of Kuan-Yin Lee surrounded by a network of agent nodes" width="320" height="320">
+        </figure>
+      </div>
+      <div class="wrap interests">
+        <h2 class="sr-only">Interests</h2>
+        <span class="tag">Generative AI</span><span class="tag">Multi-Agent Systems</span><span class="tag">LLM / SLM</span>
+        <span class="tag">Intent-Driven Networks</span><span class="tag">OSS / BSS</span><span class="tag">Cloud Native</span>
+        <span class="tag">Healthcare AI</span><span class="tag">Edge AI</span>
+      </div>
+    </section>
+
+    <!-- ───────────── 2. EDUCATION / EXPERIENCE ───────────── -->
+    <section id="experience" class="section">
+      <div class="wrap">
+        <h2><span lang="en">Education &amp; Experience</span><span lang="zh">學歷與經歷</span></h2>
+        <div class="two-col">
+          <div>
+            <h3 class="col-title"><span lang="en">Experience</span><span lang="zh">工作經歷</span></h3>
+            <ol class="timeline">
+              <li>
+                <time>2004 – <span lang="en">Present</span><span lang="zh">至今</span></time>
+                <h4><span lang="en">Senior Researcher / Chief Architect</span><span lang="zh">高級研究員 / 首席架構師</span></h4>
+                <p class="org"><span lang="en">Chunghwa Telecom Laboratories — Network Management Research Institute</span><span lang="zh">中華電信研究院 網路管理研究所</span></p>
+                <ul>
+                  <li><span lang="en">Lead architecture and technical innovation for the institute's network-management platforms.</span><span lang="zh">負責網管所大型系統架構規劃與技術創新。</span></li>
+                  <li><span lang="en">Introduced GenAI and Multi-Agent techniques into telecom OSS for AI-driven operations.</span><span lang="zh">將生成式 AI 與 Multi-Agent 技術導入電信營維系統（OSS）。</span></li>
+                  <li><span lang="en">Championed DevOps and Cloud Native practice; mentor engineers in software architecture.</span><span lang="zh">推動 DevOps 與雲原生實務，並指導工程師軟體架構。</span></li>
+                </ul>
+              </li>
+              <li>
+                <time>2001 – 2004</time>
+                <h4><span lang="en">Engineer, Information Dept.</span><span lang="zh">資訊處工程師</span></h4>
+                <p class="org"><span lang="en">Chunghwa Telecom — Data Communication / IT Branch</span><span lang="zh">中華電信 數據分公司 / 資訊分公司</span></p>
+              </li>
+            </ol>
+          </div>
+          <div>
+            <h3 class="col-title"><span lang="en">Education</span><span lang="zh">學歷</span></h3>
+            <ol class="timeline">
+              <li class="current" data-config-block="program" hidden>
+                <time>2026 – </time>
+                <h4 data-config="program"></h4>
+                <p class="org"><span lang="en">Chang Gung University</span><span lang="zh">長庚大學</span></p>
+              </li>
+              <li>
+                <time>2002 – 2004</time>
+                <h4><span lang="en">M.S., Computer Science &amp; Information Engineering</span><span lang="zh">資訊工程研究所 碩士</span></h4>
+                <p class="org"><span lang="en">National Taipei University of Technology</span><span lang="zh">國立臺北科技大學</span></p>
+                <p><span lang="en">Graduated 3rd of 19. Thesis: <em>Representative Frame Selection for Video Segments</em>.</span><span lang="zh">第三名畢業（3/19）。論文：〈視訊片段之代表性圖片選擇法〉。</span></p>
+              </li>
+              <li>
+                <time>1996 – 1999</time>
+                <h4><span lang="en">B.S., Computer Science</span><span lang="zh">資訊科學系 學士</span></h4>
+                <p class="org"><span lang="en">Chinese Culture University</span><span lang="zh">中國文化大學</span></p>
+                <p><span lang="en">Graduated 5th of 56.</span><span lang="zh">第五名畢業（5/56）。</span></p>
+              </li>
+              <li>
+                <time>1990 – 1996</time>
+                <h4><span lang="en">Associate Degree, Electronics (Computer Division)</span><span lang="zh">電子科 計算機組 副學士</span></h4>
+                <p class="org"><span lang="en">Tung Nan Junior College of Technology (now Tungnan University)</span><span lang="zh">東南工專（今東南科技大學）</span></p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <h3 class="col-title"><span lang="en">Tech journey</span><span lang="zh">技術演進</span></h3>
+        <ol class="journey" aria-label="Technology journey">
+          <li>Java</li><li>OOP / OOAD</li><li>DevOps</li><li>Cloud Native</li><li>GenAI · Multi-Agent</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ───────────── 3. RESEARCH / PROJECTS ───────────── -->
+    <section id="research" class="section alt">
+      <div class="wrap">
+        <h2><span lang="en">Research &amp; Projects</span><span lang="zh">研究與專案</span></h2>
+
+        <article class="feature">
+          <div class="feature-text">
+            <p class="eyebrow">APNOMS 2025 · IEEE · <span lang="en">Sole author</span><span lang="zh">獨立作者</span></p>
+            <h3>Intent-Driven Autonomous Reconfiguration for Telecom OSS</h3>
+            <p class="sub">A Generative-AI-Empowered Hierarchical Multi-Agent Architecture</p>
+            <p><span lang="en"><b>Problem.</b> Service re-provisioning in telecom touches many legacy OSS systems; each change needs an expert to translate a business request into dozens of system-specific steps.</span>
+               <span lang="zh"><b>問題：</b>電信服務改接牽涉多套既有 OSS 系統，每次變更都需要專家把業務需求翻譯成大量系統操作步驟。</span></p>
+            <p><span lang="en"><b>My role.</b> I chose the topic, designed the architecture, built the prototype, ran the experiments and wrote the paper — independently.</span>
+               <span lang="zh"><b>我的角色：</b>題目、架構、方法、實驗與論文撰寫皆由我獨立完成。</span></p>
+            <p><span lang="en"><b>Approach.</b> A Chief Agent decomposes an operator's intent and delegates to specialist agents. I introduced a <em>Primary-Key Pattern</em> and a <em>Command Pattern</em> for agent-to-agent communication so that data passed between agents stays unambiguous.</span>
+               <span lang="zh"><b>方法：</b>由 Chief Agent 拆解維運意圖，再委派給各專責代理人；並提出 <em>Primary-Key Pattern</em> 與 <em>Command Pattern</em> 作為代理人間的溝通方式，確保傳遞資料不失真。</span></p>
+            <p><span lang="en"><b>Result.</b> 0% error rate on the evaluated reconfiguration tasks; the pattern generalises to other multi-system industries such as finance.</span>
+               <span lang="zh"><b>成果：</b>在實驗的改接任務中達到 0% 錯誤率，架構可延伸至金融等多系統產業。</span></p>
+            <p><a class="link" href="https://ieeexplore.ieee.org/document/11181316/" target="_blank" rel="noopener">IEEE Xplore ↗</a></p>
+          </div>
+          <figure class="diagram">
+            <img src="assets/img/multi-agent.svg" alt="Diagram: an operator intent flows to a Chief Agent, which delegates to Inventory, Provisioning and Verification specialist agents that act on OSS systems." width="520" height="400">
+            <figcaption><span lang="en">Hierarchical multi-agent flow (simplified, illustrative)</span><span lang="zh">階層式多代理人流程（簡化示意圖）</span></figcaption>
+          </figure>
+        </article>
+
+        <div class="cards">
+          <article class="card">
+            <p class="eyebrow">ICCAI 2025 · IEEE · Kyoto</p>
+            <h3>Enhancing Telecom Operation Support Systems with Multi-Agent Large Language Models</h3>
+            <p><span lang="en">Hierarchical Chief + Specialist agents give high cohesion and low coupling, integrating across systems without major redevelopment. First author, with Po-An Tseng and Wei-Cheng Chen; presented in Kyoto, Japan.</span>
+               <span lang="zh">以 Chief Agent + Specialist Agents 的階層架構達成高內聚、低耦合，無需大幅改寫既有系統即可跨系統整合。第一作者（與 Po-An Tseng、Wei-Cheng Chen 合著），於日本京都發表。</span></p>
+            <a class="link" href="https://ieeexplore.ieee.org/document/11105938/" target="_blank" rel="noopener">IEEE Xplore ↗</a>
+          </article>
+          <article class="card">
+            <p class="eyebrow">ITAC 2023</p>
+            <h3><span lang="en">FSM-Based Service Provisioning Workflow Management — 5G Network Slicing</span><span lang="zh">基於有限狀態機設計服務供裝流程管理方法 — 以 5G 網路切片為例</span></h3>
+            <p><span lang="en">Applies finite-state-machine design to manage complex 5G slicing provisioning flows. Co-authored with 陳志員.</span>
+               <span lang="zh">以有限狀態機管理 5G 網路切片的複雜供裝流程。與陳志員合著。</span></p>
+          </article>
+          <article class="card">
+            <p class="eyebrow"><span lang="en">Side research · 2025</span><span lang="zh">個人研究 · 2025</span></p>
+            <h3><span lang="en">Small Language Model Agents on Raspberry Pi</span><span lang="zh">小型語言模型多代理人於 Raspberry Pi</span></h3>
+            <p><span lang="en">An off-hours project on running SLM multi-agents on resource-constrained edge devices. The first submission was not accepted; I used the reviews to strengthen the architecture depth of my APNOMS paper.</span>
+               <span lang="zh">利用公餘時間研究 SLM 多代理人在資源受限邊緣裝置上的運作。首次投稿未獲接受，評審意見成為我改進 APNOMS 論文架構深度的養分。</span></p>
+          </article>
+        </div>
+
+        <h3 class="col-title"><span lang="en">Patents</span><span lang="zh">專利</span></h3>
+        <ul class="patents">
+          <li><b>TW 202109391</b> · 2021 — <span lang="en">Network Resource Provisioning System and Method: state-machine workflow with concurrent / sequential provisioning and error handling.</span><span lang="zh">網路資源供裝系統與方法：以類狀態機取代過於複雜的 BPM，支援並行／循序供裝與錯誤處理。</span></li>
+          <li><b>TW 201711437</b> · 2017 — <span lang="en">Telecom Subscriber Batch Automated Provisioning System (primary contributor).</span><span lang="zh">電信用戶大批自動化供裝系統（主要貢獻者），支援多種速率與型態的大批供裝。</span></li>
+          <li><b>TW 201042546</b> · 2010 — <span lang="en">Message-Oriented Architecture Business Process Control Engine, replacing an unstable commercial black box.</span><span lang="zh">訊息導向架構商業流程控制引擎，取代不穩定的商用黑盒產品。</span></li>
+        </ul>
+
+        <aside class="vision">
+          <h3><span lang="en">Where I'm heading</span><span lang="zh">未來方向</span></h3>
+          <p><span lang="en">A talk on AI support for metastatic breast-cancer patients at ICCAI 2025 showed me AI can do more than automate systems — it can improve people's lives. I want to turn my architecture and agent experience into <strong>medical knowledge engineering</strong>: platforms that help clinicians keep learning and give patients accurate, personalised information.</span>
+             <span lang="zh">在 ICCAI 2025 聽到以 AI 支持轉移性乳癌病患照護的研究後，我體會到 AI 不只能讓系統自治化，更能真正幫助人。我希望把多年的架構與代理人實作經驗轉化為<strong>醫療知識工程</strong>：打造協助醫師持續學習、讓病人取得正確且客製化醫療知識的智慧平台。</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────────── 4. CONTACT ───────────── -->
+    <section id="contact" class="section">
+      <div class="wrap contact">
+        <h2><span lang="en">Contact &amp; Links</span><span lang="zh">聯絡與連結</span></h2>
+        <p><span lang="en">Open to research collaboration in Multi-Agent systems, autonomous networks and healthcare AI.</span><span lang="zh">歡迎在多代理人系統、自治化網路與醫療 AI 領域交流合作。</span></p>
+        <ul class="links">
+          <li><a data-config-href="email" href="mailto:iamkylee@gmail.com"><span class="ico" aria-hidden="true">✉</span><span data-config="email">iamkylee@gmail.com</span></a></li>
+          <li><a href="https://ieeexplore.ieee.org/document/11181316/" target="_blank" rel="noopener"><span class="ico" aria-hidden="true">↗</span>APNOMS 2025 · IEEE Xplore</a></li>
+          <li><a href="https://ieeexplore.ieee.org/document/11105938/" target="_blank" rel="noopener"><span class="ico" aria-hidden="true">↗</span>ICCAI 2025 · IEEE Xplore</a></li>
+          <li data-config-block="github" hidden><a data-config-href="github" href="#" target="_blank" rel="noopener"><span class="ico" aria-hidden="true">⌥</span>GitHub</a></li>
+          <li data-config-block="linkedin" hidden><a data-config-href="linkedin" href="#" target="_blank" rel="noopener"><span class="ico" aria-hidden="true">in</span>LinkedIn</a></li>
+        </ul>
+        <p class="loc">📍 <span lang="en">Taipei, Taiwan</span><span lang="zh">臺灣 臺北</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span id="year">2026</span> Kuan-Yin Lee 李冠穎 ·
+        <span lang="en">Built with generative AI as a collaborator, reviewed and edited by me.</span>
+        <span lang="zh">以生成式 AI 協作建置，內容經本人審閱與修訂。</span></p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
