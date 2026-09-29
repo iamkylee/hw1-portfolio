@@ -49,6 +49,7 @@ HW1/
 ├── HW.md / RQ.md          作業說明 / 本人需求
 ├── SPEC.md                本文件
 ├── HISTORY.md             版本化的問答與變更紀錄
+├── TODO.md                繳交前待辦清單
 └── README.md
 ```
 
@@ -77,13 +78,13 @@ HW1/
 |---|---|---|---|---|
 | Q1 | 你的長庚大學 **學號** 是？（About 區段必填，zip 檔名也需要） | 網站顯示 `TBD` | | ❓ 必答 |
 | Q2 | 目前就讀的 **系所 / 學位**？（顯示在學歷時間軸最上方與學號旁） | 留空 → 自動隱藏 | | ❓ |
-| Q3 | GitHub **帳號與 repo 名稱**？ | 建議 repo 名 `hw1-portfolio`、Public（免費方案的 Pages 需要 public repo；info/ 已排除不會外流） | | ❓ 必答 |
+| Q3 | GitHub **帳號與 repo 名稱**？repo 公開範圍選 A 或 B（見 TODO.md §3）？ | 建議 repo 名 `hw1-portfolio`、Public（免費方案的 Pages 需要 public repo；info/ 已排除不會外流） | | ❓ 必答 |
 | Q4 | 英文履歷寫中華電信研究院 **2001–Present**，中文履歷寫 **2001–2004 分公司 + 2004–至今研究院**，以哪個為準？ | 採中文版（兩段） | | ❓ |
 | Q5 | 要放 GitHub / LinkedIn 個人頁連結嗎？ | 不放（config 中留空即隱藏） | | ❓ |
 | Q6 | 履歷上的 Email 是 `iamkylee@email.com`，看起來是筆誤；網站用 `iamkylee@gmail.com` 可以嗎？ | 用 gmail | | ❓ |
 | Q7 | Reflection 是 AI 依本次過程寫的初稿；作業評分重視 human judgment，請用自己的話改寫/補充後再轉 PDF。 | 草稿 PDF 已產出，可先暫用 | | ❓ |
 | Q8 | 架構圖中的三個 Specialist Agent（Inventory / Provisioning / Verification）是示意命名，是否改成論文中的實際 agent 名稱？ | 圖說標示 "illustrative" | | ❓ |
-| Q9 | 是否放個人照片取代 SVG 字標頭像？ | 不放照片（隱私） | | ❓ |
+| Q9 | 是否放個人照片取代 SVG 字標頭像？（`info/` 內已有大頭照，目前未使用） | 不放照片（隱私） | | ❓ |
 
 > 回答後告訴我（或直接改表格），我會同步更新網站、HISTORY.md 並 commit。
 

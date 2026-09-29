@@ -7,9 +7,24 @@
 
 | 版本 | 日期 | 摘要 | Commit |
 |---|---|---|---|
-| v0.1.0 | 2026-09-29 | 初版：網站、GitHub Pages 部署、SPEC/HISTORY、繳交文件草稿 | 見 `git log`（初始 commit） |
+| v0.1.1 | 2026-09-29 | 新增 TODO.md 繳交前待辦；說明 repo 公開範圍 | tag `v0.1.1` |
+| v0.1.0 | 2026-09-29 | 初版：網站、GitHub Pages 部署、SPEC/HISTORY、繳交文件草稿 | `0671cad`（tag `v0.1.0`） |
 
 ---
+
+## v0.1.1 — 2026-09-29（Asia/Taipei）
+
+### Q&A 紀錄
+
+| # | 提問者 | 內容 | 回應 / 處理 |
+|---|---|---|---|
+| 6 | 使用者 | 「還需處理的部分，可以放成一個 md 嗎？」 | 新增 `TODO.md`：必做、待確認假設、repo 公開範圍、完成後回報事項 |
+| 7 | 使用者 | 「git remote HW1 的話，不會把全部都放上去嗎？還是有寫 ignore？」 | push 會上傳所有被追蹤檔案；`info/` 已由 `.gitignore` 排除（`git check-ignore` 驗證）。網站只部署 `site/`，但 Public repo 可瀏覽其餘文件 → 在 TODO.md §3 提供 A（單一 public repo）/ B（private 原始碼 + public 只放 site）兩方案待選 |
+| 8 | AI | 發現 `info/` 新增一張大頭照 | 已確認被 ignore、未使用；列為 SPEC Q9 / TODO §2 待決定 |
+
+### 變更內容
+- 新增 `TODO.md`
+- `HISTORY.md` 版本表補上 v0.1.0 commit hash
 
 ## v0.1.0 — 2026-09-29（Asia/Taipei）
 
