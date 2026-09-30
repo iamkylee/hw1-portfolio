@@ -8,7 +8,7 @@
 | 課程 | 2026 Generative AI (CGU) — Homework #1 |
 | 截止 | **2026-10-06 23:59**（每遲交 4 小時扣 5%） |
 | 繳交檔名 | **`hw1_<學號>.zip`**（格式錯誤 ×0.9） |
-| 文件版本 | v0.2.2（2026-09-29） |
+| 文件版本 | v0.2.4（2026-09-30） |
 
 ---
 
@@ -21,7 +21,7 @@
 | HW-3 | HW.md | 公開網址 | GitHub Pages（Actions 部署） | ⏳ 需建立 repo 並 push（見 Q3） |
 | HW-4 | HW.md | Source code | GitHub repo（zip 內亦附 `site/`） | ✅ |
 | HW-5 | HW.md | AI Interaction Log：3–5 個關鍵 prompt、輸出、迭代說明 | `deliverables/AI_Interaction_Log.md` | ✅ 草稿 |
-| HW-6 | HW.md | Reflection 300–500 字 PDF | `deliverables/Reflection.md` → `Reflection.pdf` | ✅ 草稿（**請用自己的話修改**，見 Q7） |
+| HW-6 | HW.md | Reflection 300–500 字 PDF | `deliverables/Reflection.docx`（可編輯）→ 使用者自行匯出 `deliverables/Reflection.pdf` | ✅ 依使用者筆記 `Reflection.md` 改寫成英文（約 410 字），待使用者審閱/修改後匯出 PDF（見 Q7、Q12） |
 | HW-7 | Handout | 能說明 AI 產出了什麼、為何接受或修改 | Log 與 HISTORY 中的「Human judgment」欄 | ✅ |
 | RQ-1 | RQ.md | 做成 GitHub 網頁，**只暴露網頁部分** | `.github/workflows/pages.yml` 只把 `site/` 上傳為 Pages artifact | ✅ |
 | RQ-2 | RQ.md | 資訊可由 `info/` 索引，但 **info/ 不可外流** | `.gitignore` 排除 `info/`；workflow 內建 guard，若 info/ 被追蹤就中止部署；網站未放任何履歷 PDF、電話、地址；打包腳本排除 info/ | ✅ |
@@ -84,7 +84,8 @@ HW1/
 | Q4 | 英文履歷寫中華電信研究院 **2001–Present**，中文履歷寫 **2001–2004 分公司 + 2004–至今研究院**，以哪個為準？ | 採中文版（兩段） | | ❓ |
 | Q5 | 要放 GitHub / LinkedIn 個人頁連結嗎？ | 不放（config 中留空即隱藏） | 放 GitHub、LinkedIn、部落格（config.js） | ✅ v0.2.0 |
 | Q6 | 履歷上的 Email 是 `iamkylee@email.com`，看起來是筆誤；網站用 `iamkylee@gmail.com` 可以嗎？ | 用 gmail | | ❓ |
-| Q7 | Reflection 是 AI 依本次過程寫的初稿；作業評分重視 human judgment，請用自己的話改寫/補充後再轉 PDF。 | 草稿 PDF 已產出，可先暫用 | | ❓ |
+| Q7 | Reflection 是 AI 依你的筆記寫成的英文初稿；作業評分重視 human judgment，請用自己的話改寫/補充後，在 Word 匯出 PDF。 | 提供 `.docx`，由你編輯並匯出（你沒有 PDF 編輯軟體） | Word 版即可，自行轉 PDF（2026-09-30） | ✅ v0.2.4 |
+| Q12 | Reflection 想再補一個**具體的個人修改例子**嗎？（目前有：補研究計劃、藍色配色、直式照片、現職更新。字數 ≈ 410，上限 500） | 如現況 | | ❓ |
 | Q8 | 架構圖中的三個 Specialist Agent（Inventory / Provisioning / Verification）是示意命名，是否改成論文中的實際 agent 名稱？ | 圖說標示 "illustrative" | | ❓ |
 | Q9 | 是否放個人照片取代 SVG 字標頭像？ | 不放照片（隱私） | 使用者已放入大頭照並要求上網站 | ✅ v0.2.0 |
 | Q10 | 你目前**仍在中華電信研究院任職**嗎？（網站經歷寫「2004 – 至今 首席架構師」，同時就讀博士班；若已留職停薪／離職，請告訴我改寫） | 維持「至今」 | 已離開中華電信研究院，全職讀書研究；任職 2004 – 2026/08（2026-09-29） | ✅ v0.2.2 |
@@ -114,5 +115,5 @@ type：`feat` 新功能、`fix` 修正、`content` 內容、`docs` 文件、`sty
 - [x] 連結檢查：站內錨點與外部連結皆有效（`python3 scripts/check_links.py`）
 - [ ] GitHub Pages 公開網址可開啟（Q3 後）
 - [x] info/ 不在 git、不在網站、不在 zip
-- [ ] Reflection 已由本人修訂並輸出 PDF（Q7）
+- [ ] Reflection.docx 已由本人審閱、匯出為 `deliverables/Reflection.pdf`（Q7）
 - [ ] `hw1_<學號>.zip` 已產生並上傳

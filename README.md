@@ -41,7 +41,7 @@ Everything that may change (student ID, program, e-mail, GitHub, LinkedIn) lives
 ## Build the submission
 
 ```bash
-python3 scripts/build_reflection_pdf.py                  # Reflection.md → Reflection.pdf
+# 先在 Word 編輯 deliverables/Reflection.docx，另存為 deliverables/Reflection.pdf
 bash scripts/make_submission.sh <studentID> <siteURL> <repoURL>
 # → dist/hw1_<studentID>.zip
 ```

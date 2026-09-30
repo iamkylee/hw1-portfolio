@@ -7,6 +7,7 @@
 
 | 版本 | 日期 | 摘要 | Commit |
 |---|---|---|---|
+| v0.2.4 | 2026-09-30 | Reflection：依使用者筆記改寫為英文 Word 檔（可編輯），移除舊的 AI 草稿 PDF 與 PDF 產生腳本 | 見 `git log`（tag `v0.2.4`） |
 | v0.2.3 | 2026-09-29 | 修正瀏覽器快取舊 CSS/圖片：資源網址加 `?v=` 版本參數 | 見 `git log`（tag `v0.2.3`） |
 | v0.2.2 | 2026-09-29 | 照片改為直式（不裁切）；中華電信任職期間精確到 2026/08 | 見 `git log`（tag `v0.2.2`） |
 | v0.2.1 | 2026-09-29 | 現職更新：已離開中華電信研究院、全職就讀博士班 | 見 `git log`（tag `v0.2.1`） |
@@ -15,6 +16,25 @@
 | v0.1.0 | 2026-09-29 | 初版：網站、GitHub Pages 部署、SPEC/HISTORY、繳交文件草稿 | `0671cad`（tag `v0.1.0`） |
 
 ---
+
+## v0.2.4 — 2026-09-30（Asia/Taipei）
+
+### Q&A 紀錄
+
+| # | 提問者 | 內容 | 回應 / 處理 |
+|---|---|---|---|
+| 20 | 使用者 | 發現作業還需要 Reflection（300–500 words）；已建立自己的 `Reflection.md` 供參考，可視需要 QA；因題目要求 PDF 但沒有 PDF 編輯軟體，希望提供 Word 檔，自行轉 PDF | 依使用者筆記的四個提問（What you asked AI to do / What it did well / Weaknesses & what you changed / What you learned）改寫為英文（課程為全英文），產出 `deliverables/Reflection.docx`（A4 一頁、約 410 字）與同內容的 `deliverables/Reflection.md` |
+| 21 | AI | Q&A：是否要補個人修改例子 | 記入 SPEC Q12；不阻擋，先交付可用版本 |
+
+### 變更內容
+- 新增 `deliverables/Reflection.docx`；`deliverables/Reflection.md` 改為同一份英文內容。
+- 使用者原稿 `Reflection.md`（專案根目錄）**保持原樣，未修改、未納入版控**。
+- 移除 `deliverables/Reflection.pdf`（舊 AI 草稿，內容已過時）與 `scripts/build_reflection_pdf.py`；`make_submission.sh` 仍會檢查 `deliverables/Reflection.pdf` 存在，避免遺漏。
+
+### Human judgment
+- 內容**只使用使用者自己筆記中的事實**（Gemini 建議 GitHub Pages、info/RQ.md 流程、雙語超出預期、逐步教學、想要更多提問、補研究計劃只寫方向、學到的三點）；另補上本次對話中使用者親身經歷且可查證的例子（登入失敗、Pages 設定、artifact 重複錯誤、隱私排除、藍色/照片/現職修改）。
+- 語氣維持第一人稱、使用者的觀點；不虛構使用者未提過的感想。
+- 字數：內文 ≈ 410（含標題與抬頭 ≈ 450），落在 300–500 內，無論以何種方式計算。
 
 ## v0.2.3 — 2026-09-29（Asia/Taipei）
 

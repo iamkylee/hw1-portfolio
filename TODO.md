@@ -24,11 +24,8 @@
   4. 到 **Actions** 分頁等部署完成（綠勾），取得網址 `https://<帳號>.github.io/hw1-portfolio/`
   5. 用手機與電腦各開一次，確認四個區段、中/EN 切換、連結都正常
 
-- [ ] **改寫 Reflection（Q7）**
-  `deliverables/Reflection.md` 是 AI 草稿，請用自己的話修改（300–500 字），然後：
-  ```bash
-  python3 scripts/build_reflection_pdf.py
-  ```
+- [ ] **審閱 Reflection 並匯出 PDF（Q7）**
+  `deliverables/Reflection.docx` 是依你筆記 `Reflection.md` 改寫的英文版（約 410 字，需 300–500 字）。用 Word 編輯後，**另存／匯出為 PDF**，存到 `deliverables/Reflection.pdf`（打包腳本會檢查這個檔案）。
 
 - [ ] **打包繳交**
   ```bash

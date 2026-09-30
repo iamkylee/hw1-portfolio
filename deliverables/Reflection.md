@@ -1,11 +1,23 @@
-# Reflection — Building My Portfolio with Generative AI
+# Reflection: Building My Portfolio Website with Generative AI
 
-**李冠穎 Kuan-Yin Lee · Student ID: TBD · HW1, 2026 Generative AI**
+**Kuan-Yin Lee (李冠穎) · Student ID D1561001 · HW1, 2026 Generative AI**
 
-> *DRAFT written with AI assistance — revise in your own words before submitting (SPEC.md Q7).*
+## What I asked AI to do
 
-**Process.** I approached this assignment the way I approach system design at work: requirements first. Before asking the AI for anything, I wrote my constraints in a small file (RQ.md): publish only the website, never expose the raw resume files in my `info/` folder, keep a versioned log of every question and change, and write commit messages that someone could audit later. I then asked Claude to build the whole assignment from those requirements and my existing resume and autobiography. The AI extracted my experience, papers and patents, read the course handout, proposed a static single-page site with a GitHub Actions workflow that deploys only the `site/` folder, and produced a first version in one pass. It then rendered the page on a desktop and a phone viewport and corrected layout bugs it found in its own screenshots.
+I started by asking Gemini to read the HW1 handout. I wanted to host the site on Google Blogger, but Gemini explained that Blogger is not suitable for a full web page and recommended GitHub Pages instead.
 
-**Human edits and judgment.** The most valuable part of the collaboration was deciding what *not* to accept. My resume contains more than a public website should: phone number, the context of a PhD application, and a rejected paper submission. I kept only e-mail and city, removed the application framing, and turned the rejected submission into a short note about learning from reviewer feedback without naming the venue. When the AI had no source for my co-authors' Chinese names, it kept their English names rather than guessing — a rule I want in every AI-assisted document. My two resumes disagree on my employment dates; instead of silently choosing one, the conflict was recorded as an open question. I also asked that the architecture diagram be labelled "illustrative", because a simplified picture should not be mistaken for the figure in my paper.
+I then asked Claude to work on my whole project folder. In an info folder I put the resume and autobiography I wrote for my Chang Gung Ph.D. application, plus my blog address. I copied the teaching assistant's requirements into HW.md, and wrote RQ.md to explain where everything was, what could be public and what must stay private, and that only the website part of the repository should be exposed on GitHub. Then I asked: "Can you build the whole assignment from RQ.md?"
 
-**What I learned about human–AI collaboration.** First, a written specification makes the AI far more useful than a clever prompt: it keeps both of us anchored and makes the output checkable. Second, the AI is fast at breadth — layout, bilingual content, dark mode, deployment scripts — but the judgment about privacy, honesty and emphasis stayed with me. Third, momentum and clarification pull against each other. When the AI stopped to ask questions, I preferred that it make a reasonable assumption and log it; the QA table in SPEC.md turned that into a to-do list rather than a blocker. Finally, traceability matters. Because every change is recorded in HISTORY.md and linked from commit messages, I can explain exactly what the AI generated, why I accepted or changed it, and how the result improved — which is precisely what this assignment asks of me, and what my own research on multi-agent systems requires of autonomous agents.
+## What it did well
+
+It exceeded my expectations in three ways. First, I had not told it that this course is taught in English, yet the first version came out in both English and Chinese, with a language toggle. Second, it respected my privacy rule: the info folder was excluded from Git, and deployment stops if that folder is ever tracked. Third, I had never used GitHub Pages, and it explained every step. When I pasted screenshots of GitHub screens and errors, it diagnosed each one and told me the next step, like an expert sitting beside me.
+
+## Weaknesses or errors I found, and what I changed
+
+I found no serious errors, but, as in software design, I wish it had asked me questions and confirmed details before building. For example, the first version used my admission-interview materials, so it lacked what I want to research at Chang Gung. I supplied my doctoral research-plan slides and told it to describe only the general research direction, not the details. It then did exactly that.
+
+My other changes were my own judgment: a blue colour scheme, my photo in a taller portrait shape, my student ID and department, and my current status (I left Chunghwa Telecom in August 2026). Only I knew these facts, and only I could decide what to make public.
+
+## What I learned about human–AI collaboration
+
+The more complete the information I give, the more complete the result. A clear specification, such as my RQ.md, let the AI perform better and follow my rules consistently. Prompts should carry full context, or, even better, I should ask the AI to gather requirements through questions and answers before it starts. The AI can do most of the work, but I remain responsible for the facts only I know and for what is published under my name.
