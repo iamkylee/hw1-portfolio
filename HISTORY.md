@@ -7,6 +7,7 @@
 
 | 版本 | 日期 | 摘要 | Commit |
 |---|---|---|---|
+| v0.2.5 | 2026-10-02 | 首頁自我介紹改為使用者提供的精簡版（EN），中文版同步改寫 | 見 `git log`（tag `v0.2.5`） |
 | v0.2.4 | 2026-09-30 | Reflection：依使用者筆記改寫為英文 Word 檔（可編輯），移除舊的 AI 草稿 PDF 與 PDF 產生腳本 | 見 `git log`（tag `v0.2.4`） |
 | v0.2.3 | 2026-09-29 | 修正瀏覽器快取舊 CSS/圖片：資源網址加 `?v=` 版本參數 | 見 `git log`（tag `v0.2.3`） |
 | v0.2.2 | 2026-09-29 | 照片改為直式（不裁切）；中華電信任職期間精確到 2026/08 | 見 `git log`（tag `v0.2.2`） |
@@ -16,6 +17,26 @@
 | v0.1.0 | 2026-09-29 | 初版：網站、GitHub Pages 部署、SPEC/HISTORY、繳交文件草稿 | `0671cad`（tag `v0.1.0`） |
 
 ---
+
+## v0.2.5 — 2026-10-02（Asia/Taipei）
+
+### Q&A 紀錄
+
+| # | 提問者 | 內容 | 回應 / 處理 |
+|---|---|---|---|
+| 22 | 使用者 | 提供新的 About 自我介紹英文文字（較精簡），要求改上去並更新相關資料 | 英文**逐字採用**使用者文字；中文版因網站為雙語，依同義改寫（見下）；meta / og description 的用詞同步為 "self-evolving" |
+
+### 變更內容
+- `site/index.html` About 簡介：
+  - EN：*24 years building large-scale telecom systems at Chunghwa Telecom Laboratories, from Java/OOP to cloud-native and generative AI. Now a full-time Ph.D. student in AI at Chang Gung University (since Sept 2026), researching **self-evolving multi-agent LLM systems** that organise, specialise, and choose what to learn next.*
+  - 中：在中華電信研究院打造大型電信系統二十四年，從 Java/OOP 一路走到雲原生與生成式 AI。現為長庚大學人工智慧學系全職博士生（2026 年 9 月起），研究**能自我演化的多代理人 LLM 系統**：自行組織、專精分工，並主動選擇要學什麼。
+- `<meta name="description">`、`og:description`：改用 "self-evolving multi-agent LLM systems"，與簡介一致。
+- `.gitignore`：新增 `~$*`、`.~lock.*`（Word / LibreOffice 編輯 Reflection.docx 時產生的暫存檔，不應進版控）。
+
+### Human judgment
+- 英文為使用者原文，**未再潤飾**；中文為 AI 依英文改寫，請使用者確認語氣。
+- 「研究方向」區塊標題仍沿用使用者簡報的「自成長（Self-Growing）」，簡介改用「自我演化（self-evolving）」是使用者新文字；兩者並存，如要統一用詞請告知（Q13）。
+- 僅改 `index.html`，未動 `assets/`，所以不需要遞增 `?v=` 快取版本。
 
 ## v0.2.4 — 2026-09-30（Asia/Taipei）
 

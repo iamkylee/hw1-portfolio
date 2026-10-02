@@ -12,3 +12,7 @@ Thumbs.db
 .vscode/
 .idea/
 __pycache__/
+
+# Word / LibreOffice 編輯中的暫存鎖定檔
+~$*
+.~lock.*
