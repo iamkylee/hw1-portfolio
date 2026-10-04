@@ -4,13 +4,18 @@
 > 相關文件：待確認問題見 `SPEC.md §4 QA`；變更紀錄見 `HISTORY.md`。
 > 完成一項就把 `[ ]` 改成 `[x]`。
 
+## 0. 最後一步
+
+- [ ] **把 `dist/hw1_D1561001.zip` 上傳到課程平台**（截止 **2026-10-06 23:59**；檔名不可改，否則 ×0.9）
+- [ ] 上傳前，用 Mac 解壓縮看一次：`1_Live_Website_URL.txt`、`2_Source_Code/`、`3_AI_Interaction_Log.md`、`4_Reflection.pdf`
+
 ## 1. 必做（沒做會扣分）
 
 - [x] **填學號（Q1）**（已完成：D1561001）
   打開 `site/assets/config.js`，把 `studentId: "TBD"` 改成你的學號。
   （可選）同檔 `program:` 填目前就讀系所（Q2），空字串會自動隱藏。
 
-- [ ] **決定 GitHub repo 要公開哪些檔案** → 見下方 §3，選 A 或 B
+- [x] **決定 GitHub repo 要公開哪些檔案**（採 A：單一 Public repo，info/ 除外）
 
 - [x] **建立 GitHub repo 並推上去**（Q3）（已完成：https://github.com/iamkylee/hw1-portfolio ；網站 https://iamkylee.github.io/hw1-portfolio/ ）
   1. GitHub → New repository，名稱例如 `hw1-portfolio`，**Public**，**不要**勾 README
@@ -24,12 +29,12 @@
   4. 到 **Actions** 分頁等部署完成（綠勾），取得網址 `https://<帳號>.github.io/hw1-portfolio/`
   5. 用手機與電腦各開一次，確認四個區段、中/EN 切換、連結都正常
 
-- [ ] **審閱 Reflection 並匯出 PDF（Q7）**
+- [x] **審閱 Reflection 並匯出 PDF（Q7）**（已完成）
   `deliverables/Reflection.docx` 是依你筆記 `Reflection.md` 改寫的英文版（約 410 字，需 300–500 字）。用 Word 編輯後，**另存／匯出為 PDF**，存到 `deliverables/Reflection.pdf`（打包腳本會檢查這個檔案）。
 
-- [ ] **打包繳交**
+- [x] **打包繳交**（已產生 `dist/hw1_D1561001.zip`；Reflection 或學號有改動時，重跑下方指令即可）
   ```bash
-  bash scripts/make_submission.sh <學號> https://<帳號>.github.io/hw1-portfolio/ https://github.com/<帳號>/hw1-portfolio
+  bash scripts/make_submission.sh D1561001 https://iamkylee.github.io/hw1-portfolio/ https://github.com/iamkylee/hw1-portfolio
   ```
   產出 `dist/hw1_<學號>.zip`（不含 info/），上傳到課程平台。**檔名格式錯會 ×0.9。**
 

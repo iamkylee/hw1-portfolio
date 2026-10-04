@@ -8,7 +8,7 @@
 | 課程 | 2026 Generative AI (CGU) — Homework #1 |
 | 截止 | **2026-10-06 23:59**（每遲交 4 小時扣 5%） |
 | 繳交檔名 | **`hw1_<學號>.zip`**（格式錯誤 ×0.9） |
-| 文件版本 | v0.2.5（2026-10-02） |
+| 文件版本 | v0.2.6（2026-10-04） |
 
 ---
 
@@ -114,7 +114,8 @@ type：`feat` 新功能、`fix` 修正、`content` 內容、`docs` 文件、`sty
 - [x] 桌機 1280px / 手機 390px 無水平捲動（Playwright 截圖驗證）
 - [x] 視覺元素 ≥ 1（頭像、架構圖、時間軸）
 - [x] 連結檢查：站內錨點與外部連結皆有效（`python3 scripts/check_links.py`）
-- [ ] GitHub Pages 公開網址可開啟（Q3 後）
+- [x] GitHub Pages 公開網址可開啟：https://iamkylee.github.io/hw1-portfolio/
 - [x] info/ 不在 git、不在網站、不在 zip
-- [ ] Reflection.docx 已由本人審閱、匯出為 `deliverables/Reflection.pdf`（Q7）
-- [ ] `hw1_<學號>.zip` 已產生並上傳
+- [x] Reflection.docx 已由本人審閱、匯出為 `deliverables/Reflection.pdf`（Q7；約 451 words，1 頁）
+- [x] `hw1_D1561001.zip` 已產生（`dist/`，24 個檔案、144 KB）
+- [ ] zip 已上傳到課程平台（截止 2026-10-06 23:59）

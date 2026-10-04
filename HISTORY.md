@@ -7,6 +7,7 @@
 
 | 版本 | 日期 | 摘要 | Commit |
 |---|---|---|---|
+| v0.2.6 | 2026-10-04 | 繳交封裝：四項交付物目錄、AI Log 更新、Reflection.pdf 入庫、打包腳本改版 | 見 `git log`（tag `v0.2.6`） |
 | v0.2.5 | 2026-10-02 | 首頁自我介紹改為使用者提供的精簡版（EN），中文版同步改寫 | 見 `git log`（tag `v0.2.5`） |
 | v0.2.4 | 2026-09-30 | Reflection：依使用者筆記改寫為英文 Word 檔（可編輯），移除舊的 AI 草稿 PDF 與 PDF 產生腳本 | 見 `git log`（tag `v0.2.4`） |
 | v0.2.3 | 2026-09-29 | 修正瀏覽器快取舊 CSS/圖片：資源網址加 `?v=` 版本參數 | 見 `git log`（tag `v0.2.3`） |
@@ -17,6 +18,34 @@
 | v0.1.0 | 2026-09-29 | 初版：網站、GitHub Pages 部署、SPEC/HISTORY、繳交文件草稿 | `0671cad`（tag `v0.1.0`） |
 
 ---
+
+## v0.2.6 — 2026-10-04（Asia/Taipei）
+
+### Q&A 紀錄
+
+| # | 提問者 | 內容 | 回應 / 處理 |
+|---|---|---|---|
+| 23 | 使用者 | 依作業 §3「Submit a single ZIP file containing」四項交付物，整理成完整目錄與檔案 | 產出 `dist/hw1_D1561001.zip`（結構見下）；AI Log 更新；打包腳本改版 |
+
+### 繳交檔結構（`hw1_D1561001.zip`）
+```
+hw1_D1561001/
+├── README.md                    交付物索引
+├── 1_Live_Website_URL.txt       https://iamkylee.github.io/hw1-portfolio/
+├── 2_Source_Code/               REPO_LINK.txt（https://github.com/iamkylee/hw1-portfolio）＋ site/、.github/、scripts/、SPEC/HISTORY/README/RQ/HW、.gitignore
+├── 3_AI_Interaction_Log.md      5 個關鍵 prompt、輸出、判斷與迭代
+└── 4_Reflection.pdf             使用者自行由 Word 匯出（≈451 words，1 頁）
+```
+
+### 變更內容
+- `deliverables/AI_Interaction_Log.md`：學號補上 D1561001；改寫為 5 個關鍵 prompt，涵蓋 v0.2.x 的後續迭代（研究方向、照片、藍色、離職、自我介紹、部署疑難排解）。
+- `scripts/make_submission.sh` 改版：改為編號目錄；事前檢查（學號與 config 一致、Reflection.pdf 存在且字數 300–500、`info/` 未被追蹤）；打包後再掃描，若含 `info/`、pptx、履歷、大頭貼原檔、Word 暫存檔即刪除；多餘 PDF 會中止。
+- `deliverables/Reflection.pdf`（使用者匯出的定稿）納入版控。
+- SPEC 驗收清單、TODO 勾選更新。
+
+### Human judgment
+- zip 內**不放**使用者自己的 `Reflection.md` 筆記、`TODO.md`、`info/` 任何檔案；原始碼包含網站與文件，足以重現。
+- 作業要求「Reflection 300–500 words」：PDF 全文（含標題與抬頭）約 451 字，無論是否計入標題皆在範圍內。
 
 ## v0.2.5 — 2026-10-02（Asia/Taipei）
 
