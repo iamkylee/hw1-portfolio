@@ -7,6 +7,7 @@
 
 | 版本 | 日期 | 摘要 | Commit |
 |---|---|---|---|
+| v0.2.7 | 2026-11-09 | 聯絡與連結新增「學習空間」連結（learning-space），並在簡介句補充說明 | 見 `git log`（tag `v0.2.7`） |
 | v0.2.6 | 2026-10-04 | 繳交封裝：四項交付物目錄、AI Log 更新、Reflection.pdf 入庫、打包腳本改版 | 見 `git log`（tag `v0.2.6`） |
 | v0.2.5 | 2026-10-02 | 首頁自我介紹改為使用者提供的精簡版（EN），中文版同步改寫 | 見 `git log`（tag `v0.2.5`） |
 | v0.2.4 | 2026-09-30 | Reflection：依使用者筆記改寫為英文 Word 檔（可編輯），移除舊的 AI 草稿 PDF 與 PDF 產生腳本 | 見 `git log`（tag `v0.2.4`） |
@@ -16,6 +17,16 @@
 | v0.2.0 | 2026-09-29 | 博士研究方向、學歷更新（長庚 AI 博士班）、本人照片、藍色主題、Contact 加 GitHub/LinkedIn/部落格 | 見 `git log`（tag `v0.2.0`） |
 | v0.1.1 | 2026-09-29 | 新增 TODO.md 繳交前待辦；說明 repo 公開範圍 | tag `v0.1.1` |
 | v0.1.0 | 2026-09-29 | 初版：網站、GitHub Pages 部署、SPEC/HISTORY、繳交文件草稿 | `0671cad`（tag `v0.1.0`） |
+
+---
+
+## v0.2.7 — 2026-11-09（Asia/Taipei）
+
+### Q&A 紀錄
+
+| # | 提問者 | 內容 | 回應 / 處理 |
+|---|---|---|---|
+| 24 | 使用者 | 在簡介的連結部分連到我的 learningspace，讓筆記一起分享 | `config.js` 新增 `learningSpace`；Contact & Links 新增「學習空間・AI 學習筆記」連結（`https://iamkylee.github.io/learning-space/`），段落補一句說明；資源 `?v=` 升到 0.2.7 |
 
 ---
 

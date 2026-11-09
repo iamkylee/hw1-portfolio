@@ -8,5 +8,6 @@ window.SITE_CONFIG = {
   email:     "iamkylee@gmail.com",
   github:    "https://github.com/iamkylee",
   blog:      "https://maxwell4ever.blogspot.com/",
+  learningSpace: "https://iamkylee.github.io/learning-space/",
   linkedin:  "https://www.linkedin.com/in/maxwell-k-y-lee-515b95256/"
 };
