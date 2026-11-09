@@ -126,6 +126,9 @@ h1 .name-zh { display: block; font-size: .55em; color: var(--muted); font-weight
 .links a:hover { border-color: var(--accent); color: var(--accent); }
 .ico { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); flex: none; font-size: .95rem; }
 .loc { color: var(--muted); }
+.minor { margin: 4px 0 0; font-size: .8rem; color: var(--muted); }
+.minor a { color: var(--muted); opacity: .75; text-decoration: underline dotted; }
+.minor a:hover { color: var(--accent); opacity: 1; }
 .footer { border-top: 1px solid var(--line); padding: 24px 0; color: var(--muted); font-size: .88rem; }
 
 /* ========== Responsive ========== */
